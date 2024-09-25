@@ -1,57 +1,92 @@
-
-
-# Setup Project Laravel Filament Sewa Mobil Jasamedika di Localhost
+# Proyek Laravel Filament Sewa Mobil Jasamedika
 
 ## Prasyarat
 
-* Laravel versi 11
-* Database MySQL (gunakan XAMPP/Laragon)
-* Composer
+Sebelum memulai, pastikan Anda memenuhi prasyarat berikut:
+
+- **Laravel** versi 11
+- **Database**: MySQL (gunakan XAMPP atau Laragon)
+- **Composer**: Pastikan Composer telah terinstal di sistem Anda
 
 ## Langkah-langkah Setup
 
 ### 1. Clone Repository
 
-Clone repository ini ke direktori lokal Anda.
+Unduh atau clone proyek ini dengan perintah berikut:
 
-### 2. Instalasi Dependency
+```bash
+git clone https://github.com/MRFerdinands/Jasamedika_Sewa_Mobil
+```
 
- Jalankan perintah `composer install` untuk menginstal dependency.
+### 2. Akses Folder Proyek
 
-### 3. Konfigurasi Database
+Masuk ke direktori proyek yang telah di-clone:
 
-Buat database baru di MySQL dan konfigurasi file `.env` dengan settingan database Anda.
+```bash
+cd Jasamedika_Sewa_Mobil
+```
 
-### 4. Jalankan Migration
+### 3. Instalasi Dependency
 
-Jalankan perintah `php artisan migrate` untuk menjalankan migration.
+Instal semua dependency yang diperlukan dengan menjalankan perintah berikut:
 
-### 5. Jalankan Seeder
+```bash
+composer install
+```
 
-Jalankan perintah `php artisan db:seed` untuk menjalankan seeder.
+### 4. Konfigurasi Database
 
-### 6. Jalankan Server
+Buka file `.env` dan sesuaikan pengaturan database dengan informasi berikut:
 
-Jalankan perintah `php artisan serve` untuk menjalankan server.
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=jasamedika_persewaan_mobil
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-### 7. Akses Aplikasi
+### 5. Jalankan Migration
 
-Akses aplikasi melalui browser dengan URL `http://localhost:8000`
+Jalankan perintah di bawah ini untuk menjalankan migrasi database:
+
+```bash
+php artisan migrate
+```
+
+### 6. Jalankan Seeder
+
+Isi database dengan data awal menggunakan seeder:
+
+```bash
+php artisan db:seed
+```
+
+### 7. Jalankan Server
+
+Mulai server lokal dengan perintah berikut:
+
+```bash
+php artisan serve
+```
+
+### 8. Akses Aplikasi
+
+Buka aplikasi Anda di browser dengan mengunjungi URL:
+
+```
+http://localhost:8000
+```
 
 ## Informasi Tambahan
 
-* Pastikan Anda telah menginstal Laravel dan Composer sebelum menjalankan perintah di atas.
-* Jika Anda menggunakan XAMPP, pastikan Anda telah mengaktifkan modul MySQL.
-* Jika Anda menggunakan Laragon, pastikan Anda telah mengaktifkan service MySQL.
-
-## Kontribusi
-
-Jika Anda ingin berkontribusi pada project ini, silakan fork repository ini dan kirimkan pull request.
+- Pastikan Anda telah menginstal Laravel dan Composer sebelum menjalankan perintah di atas.
+- Jika menggunakan XAMPP, pastikan modul MySQL telah diaktifkan.
+- Jika menggunakan Laragon, pastikan layanan MySQL aktif.
 
 ## Lisensi
 
-Project ini menggunakan lisensi MIT.
+Proyek ini menggunakan **Lisensi MIT**.
 
-## Terima Kasih
-
-Terima kasih atas perhatian Anda. Semoga project ini dapat membantu Anda dalam membuat aplikasi sewa mobil yang efektif.
+## Terima Kasih 😊
