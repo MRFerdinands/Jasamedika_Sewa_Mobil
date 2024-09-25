@@ -1,4 +1,4 @@
-# Proyek Laravel Filament Sewa Mobil Jasamedika
+# Laravel Filament Sewa Mobil Jasamedika
 
 ## Prasyarat
 
@@ -15,7 +15,7 @@ Sebelum memulai, pastikan Anda memenuhi prasyarat berikut:
 Unduh atau clone proyek ini dengan perintah berikut:
 
 ```bash
-git clone https://github.com/MRFerdinands/Jasamedika_Sewa_Mobil
+git clone https://github.com/MRFerdinands/Jasamedika_Sewa_Mobil.git
 ```
 
 ### 2. Akses Folder Proyek
@@ -102,6 +102,18 @@ Buka aplikasi Anda di browser dengan mengunjungi URL:
 ```
 http://localhost:8000
 ```
+
+## Data Login Awal
+
+Setelah aplikasi berjalan, Anda dapat menggunakan kredensial berikut untuk login:
+
+### Role: Admin
+- **Email**: admin@admin.com
+- **Password**: jasamedika
+
+### Role: User
+- **Email**: user@user.com
+- **Password**: jasamedika
 
 ## Informasi Tambahan
 
