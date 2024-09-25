@@ -47,7 +47,15 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 5. Jalankan Migration
+### 5. Generate Application Key
+
+Jalankan perintah berikut untuk menghasilkan application key yang unik:
+
+```bash
+php artisan key:generate
+```
+
+### 6. Jalankan Migration
 
 Jalankan perintah di bawah ini untuk menjalankan migrasi database:
 
@@ -55,7 +63,7 @@ Jalankan perintah di bawah ini untuk menjalankan migrasi database:
 php artisan migrate
 ```
 
-### 6. Jalankan Seeder
+### 7. Jalankan Seeder
 
 Isi database dengan data awal menggunakan seeder:
 
@@ -63,7 +71,15 @@ Isi database dengan data awal menggunakan seeder:
 php artisan db:seed
 ```
 
-### 7. Jalankan Server
+### 8. Buat Symbolic Link untuk Storage
+
+Jalankan perintah berikut untuk membuat symbolic link ke folder `storage`:
+
+```bash
+php artisan storage:link
+```
+
+### 9. Jalankan Server
 
 Mulai server lokal dengan perintah berikut:
 
@@ -71,7 +87,7 @@ Mulai server lokal dengan perintah berikut:
 php artisan serve
 ```
 
-### 8. Akses Aplikasi
+### 10. Akses Aplikasi
 
 Buka aplikasi Anda di browser dengan mengunjungi URL:
 
