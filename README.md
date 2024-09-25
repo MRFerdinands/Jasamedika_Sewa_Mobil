@@ -1,12 +1,14 @@
-# Laravel Filament Sewa Mobil Jasamedika
+# Project Laravel Persewaan Mobil Jasamedika
 
-## Prasyarat
+## Library yang Digunakan
 
-Sebelum memulai, pastikan Anda memenuhi prasyarat berikut:
+Proyek ini dibangun menggunakan beberapa library utama, antara lain:
 
 - **Laravel** versi 11
-- **Database**: MySQL (gunakan XAMPP atau Laragon)
-- **Composer**: Pastikan Composer telah terinstal di sistem Anda
+- **Filament**: Library untuk membangun antarmuka admin yang responsif dan elegan.
+- **Livewire**: Untuk membangun antarmuka interaktif tanpa perlu menulis JavaScript.
+- **Alpine.js**: Untuk menambah interaktivitas dan dinamika pada tampilan.
+- **Cleave.js**: Untuk memformat input pengguna, seperti format harga.
 
 ## Langkah-langkah Setup
 
@@ -50,7 +52,7 @@ Buka file `.env` yang telah disalin dan sesuaikan pengaturan database dengan inf
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=jasamedika_persewaan_mobil
+DB_DATABASE=nama_db_mu
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -114,12 +116,6 @@ Setelah aplikasi berjalan, Anda dapat menggunakan kredensial berikut untuk login
 ### Role: User
 - **Email**: user@user.com
 - **Password**: jasamedika
-
-## Informasi Tambahan
-
-- Pastikan Anda telah menginstal Laravel dan Composer sebelum menjalankan perintah di atas.
-- Jika menggunakan XAMPP, pastikan modul MySQL telah diaktifkan.
-- Jika menggunakan Laragon, pastikan layanan MySQL aktif.
 
 ## Lisensi
 
