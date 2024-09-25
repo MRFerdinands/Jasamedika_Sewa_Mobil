@@ -34,9 +34,17 @@ Instal semua dependency yang diperlukan dengan menjalankan perintah berikut:
 composer install
 ```
 
-### 4. Konfigurasi Database
+### 4. Salin File .env
 
-Buka file `.env` dan sesuaikan pengaturan database dengan informasi berikut:
+Salin file `.env.example` menjadi `.env` dengan perintah berikut:
+
+```bash
+cp .env.example .env
+```
+
+### 5. Konfigurasi Database
+
+Buka file `.env` yang telah disalin dan sesuaikan pengaturan database dengan informasi berikut:
 
 ```
 DB_CONNECTION=mysql
@@ -47,7 +55,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-### 5. Generate Application Key
+### 6. Generate Application Key
 
 Jalankan perintah berikut untuk menghasilkan application key yang unik:
 
@@ -55,7 +63,7 @@ Jalankan perintah berikut untuk menghasilkan application key yang unik:
 php artisan key:generate
 ```
 
-### 6. Jalankan Migration
+### 7. Jalankan Migration
 
 Jalankan perintah di bawah ini untuk menjalankan migrasi database:
 
@@ -63,7 +71,7 @@ Jalankan perintah di bawah ini untuk menjalankan migrasi database:
 php artisan migrate
 ```
 
-### 7. Jalankan Seeder
+### 8. Jalankan Seeder
 
 Isi database dengan data awal menggunakan seeder:
 
@@ -71,7 +79,7 @@ Isi database dengan data awal menggunakan seeder:
 php artisan db:seed
 ```
 
-### 8. Buat Symbolic Link untuk Storage
+### 9. Buat Symbolic Link untuk Storage
 
 Jalankan perintah berikut untuk membuat symbolic link ke folder `storage`:
 
@@ -79,7 +87,7 @@ Jalankan perintah berikut untuk membuat symbolic link ke folder `storage`:
 php artisan storage:link
 ```
 
-### 9. Jalankan Server
+### 10. Jalankan Server
 
 Mulai server lokal dengan perintah berikut:
 
@@ -87,7 +95,7 @@ Mulai server lokal dengan perintah berikut:
 php artisan serve
 ```
 
-### 10. Akses Aplikasi
+### 11. Akses Aplikasi
 
 Buka aplikasi Anda di browser dengan mengunjungi URL:
 
